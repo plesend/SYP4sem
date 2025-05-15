@@ -1,0 +1,89 @@
+.calculator {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 320px;
+  gap: 15px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  background-color: #f7f7f7;
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.display {
+  grid-column: span 4;
+  background-color: #e6e6e6;
+  padding: 20px;
+  text-align: right;
+  font-size: 2em;
+  word-wrap: break-word;
+  color: black;
+  border-radius: 8px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  padding: 20px;
+  font-size: 1.5em;
+  border: none;
+  background-color: #d9d9d9;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+button:hover {
+  background-color: #c4c4c4;
+}
+
+.changetheme {
+  margin-top: 30px;
+  padding: 12px 24px;
+  font-size: 1em;
+  background-color: #007bff;
+  color: white;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.changetheme:hover {
+  background-color: #0056b3;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.lightTheme,
+.darkTheme {
+  width: 100%;
+  transition: color 0.3s ease-out, background-color 0.3s ease-out;
+}
+
+.lightTheme {
+  background-color: #fdfdfd;
+  color: black;
+}
+
+.darkTheme {
+  background-color: #2c2a2a;
+  color: white;
+}
+
+.history div {
+  margin-top: 5px;
+  font-family: monospace;
+  font-size: 0.9em;
+  color: inherit;
+}

@@ -1,0 +1,92 @@
+.formCard {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.darkTheme .formCard {
+  background-color: #3b3b3b;
+  color: #f0f0f0;
+}
+
+form h1 {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 1.8em;
+}
+
+.fields {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+input {
+  padding: 12px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+}
+
+.darkTheme input {
+  background-color: #2b2b2b;
+  color: white;
+  border: 1px solid #555;
+}
+
+input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+button[type="submit"] {
+  padding: 12px;
+  font-size: 1em;
+  background-color: #b794f4; 
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #9f7aea;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.links a {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 0.95em;
+  transition: color 0.2s ease;
+}
+
+.links a:hover {
+  color: #0056b3;
+}
+
+.errorMessage,
+.collapseMessage {
+  color: #dc3545;
+  font-size: 0.9em;
+  margin-top: -8px;
+  margin-bottom: -4px;
+}
+
+.successMessage {
+  color: #28a745;
+  font-size: 0.95em;
+  margin-top: 20px;
+  text-align: center;
+}
